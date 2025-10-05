@@ -1,0 +1,116 @@
+/* @theme greenbar */
+/* @import must be at the very top */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Inherit from the default theme to get sensible base styles */
+@import 'default';
+
+/* Define theme-wide variables for colors and fonts */
+:root {
+  --brand-blue: #007acc;
+  --brand-dark-blue: #004a7c;
+  --text-light: #f8f8f8;
+  --text-dark: #333;
+  --bg-color: #fdfdfd;
+  --code-bg: #2d2d2d;
+  --font-main: 'IBM Plex Sans Thai', sans-serif;
+}
+
+/* Base styles for every slide */
+section {
+  background-color: var(--bg-color);
+  font-family: var(--font-main);
+  font-size: 24px;
+  color: var(--text-dark);
+  padding: 0 60px 60px 60px; /* Adjusted padding */
+  background: linear-gradient(to right,
+    #ffffff 0%, #ffffff 85%,
+    #e8fbe8 85%,#e8fbe8 87%,
+    #ffffff 87%, #ffffff 89%,
+    #a3e9a4 89%,#a3e9a4 91%,
+    #ffffff 91%, #ffffff 93%,
+    #27ae60 93%,#27ae60 95%,
+    #ffffff 95%, #ffffff 97%,
+    #145a32 97%,#145a32 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Vertically align content to the top */
+  padding-top: 5%; /* Add a 5% gap from the top */
+}
+
+/* --- TITLE SLIDE STYLES --- */
+section.title-slide {
+  justify-content: center; /* Center content vertically on the title slide */
+  text-align: center;
+  padding-top: 0; /* Reset padding-top for title slide */
+}
+
+section.title-slide h1 {
+  font-size: 2.5em; /* Make the title significantly larger */
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+section.title-slide p {
+  font-size: 0.8em; /* Make presenter and date smaller */
+  margin: 0;
+}
+
+/* Typography styles for content slides */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-blue);
+  font-weight: 700; /* Bold weight for headings */
+}
+
+h1 {
+  font-size: 1.5em; /* em is relative to the section's font-size */
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.25em;
+  /* border-bottom: 2px solid var(--brand-blue); */
+  padding-bottom: 0.2em;
+}
+
+/* Link styles */
+a {
+  color: var(--brand-dark-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code block styles */
+pre, code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+  background-color: var(--code-bg);
+  color: var(--text-light);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+/* Header and Footer from directives */
+header, footer {
+  color: var(--brand-dark-blue);
+  font-size: 0.7em;
+}
+
+/* --- TWO COLUMN LAYOUT --- */
+.multi-columns {
+  display: flex;
+  gap: 40px; /* Space between the two columns */
+  flex-grow: 1; /* Allows the columns container to fill the remaining slide height */
+}
+
+.column {
+  flex: 1; /* Each column takes up equal space */
+  /* Add any additional styling for the columns here */
+}

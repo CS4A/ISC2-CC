@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"markdown.marp.themes": [
+			"./res/greenbar.css"
+		],
+		"editor.experimentalGpuAcceleration": "on"
+	}
+}
