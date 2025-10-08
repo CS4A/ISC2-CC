@@ -308,6 +308,7 @@ img[alt~="slide-personnel-placement"] {
 
 ![w:230](./res/monitoring.png)
 </center>
+
 ---
 # Layer 4: Asset Protection
 Protecting the critical infrastructure and data within the facility.
@@ -319,6 +320,7 @@ Protecting the critical infrastructure and data within the facility.
 * **Secure Destruction of Media:** When physical media (hard drives, tapes, paper) is no longer needed, it must be destroyed securely.
     * **Shredding, Pulverizing:** Physical destruction.
     * **Degaussing:** Using a powerful magnet to destroy data on magnetic tapes. This is often the most effective method for tapes.
+    * **Overwriting/Data Wiping:** Overwriting data multiple times with random patterns to render it 
 ---
 <!-- _class: title-slide -->
 ## Part 3
